@@ -97,14 +97,6 @@ array:4 [▼
 
 When you get an access token, you should save it in the config/infeed_gam.php configuration file, because it avoids asking token access requests too often. By default Access token will expire in a year, but in our system will automatically refresh the token
 
-## Scopes
-Here are some scopes available
-| No |	Name	Description
-| -- | -----| ---------- |
-| 1  |	basic |	Grants your app access to the default fields of the User object |
-| 2	 | get-advertisers |	Get Advertisers |
-| 3	 | create-advertiser |	Create Advertiser |
-
 ## RESTfulness
 The Infeed API follows the more standard REST convention of utilizing the HTTP response codes to identify the status of the response. These include, but are not limited to:
 
