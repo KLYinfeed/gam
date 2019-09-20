@@ -16,7 +16,7 @@ composer require kly-infeed/gam
 
 Add provider to your app/config/app.php providers
 ```
-InfeedKLY\GAM\GamServiceProvider::class,
+KLYinfeed\GAM\GamServiceProvider::class,
 ```
 
 Publish config
@@ -26,7 +26,7 @@ php artisan vendor:publish
 
 Add alias to app/config/app.php aliases
 ```
-'GAM' => InfeedKLY\GAM\Facades\GAM::class,
+'GAM' => KLYinfeed\GAM\Facades\GAM::class,
 ```
 
 ## Configuration
@@ -42,7 +42,7 @@ return [
     //cache
     "cache_enabled" => false,
     "cache_duration" => 3600, // Duration in minutes
-    "cache_key_prefix" => "InfeedKLY.GAM.",
+    "cache_key_prefix" => "KLYinfeed.GAM.",
     "response_format" => "json", // json, xml
 ];
 ```
