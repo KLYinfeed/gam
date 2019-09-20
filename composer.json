@@ -1,0 +1,22 @@
+{
+    "name": "KLYinfeed/gam",
+    "description": "KLY Infeed - Google Manager v1",
+    "authors": [
+        {
+            "name": "Yuda Prawira",
+            "email": "yuda.prawira@kly.id"
+        }
+    ],
+     "require": {
+        "guzzlehttp/guzzle": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.4.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "KLYinfeed\\GAM\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
