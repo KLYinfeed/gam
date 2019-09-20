@@ -5,13 +5,13 @@ To get started, install Infeed Google AdManager via the Composer package manager
 Add Infeed Google AdManager to your composer.json file.
 ```
 require : {
-    "infeedkly/gam": "1.0"
+    "kly-infeed/gam": "1.0"
 }
 ```
 
 Or with composer command:
 ```
-composer require infeedkly/gam
+composer require kly-infeed/gam
 ```
 
 Add provider to your app/config/app.php providers
