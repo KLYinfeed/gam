@@ -8,10 +8,12 @@ use GuzzleHttp\Exception\BadResponseException;
 use KLYinfeed\GAM\Traits\AuthTrait,
     KLYinfeed\GAM\Traits\AdminTrait,
     KLYinfeed\GAM\Traits\GeneralTrait;
+	KLYinfeed\GAM\Traits\InventoryTrait,
+	KLYinfeed\GAM\Traits\ReportTrait;
 
 class API extends Model 
 {
-    use AuthTrait, AdminTrait, GeneralTrait;
+    use AuthTrait, AdminTrait, GeneralTrait, InventoryTrait, ReportTrait;
     
     /**
      * Constructor
