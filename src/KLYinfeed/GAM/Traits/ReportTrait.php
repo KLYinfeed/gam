@@ -24,7 +24,7 @@ trait ReportTrait
     {
         if( $params ) $params = http_build_query($params);
 
-        return $this->_get('report/placements?'.$params);
+        return $this->_get('report/placements/'.$params);
     }
 
 	/**
@@ -38,6 +38,17 @@ trait ReportTrait
 
         return $this->_get('report/lineitem/' . $id.'?'.$params);
     }
+	
+	/**
+     * REPORT - CUSTOM LINEITEM REPORT  
+    **/
+	public function get_custom-lineitem($params=null)
+    {
+        $id = isset($params['id']) ? $params['id'] : null;
 
+        if( $params ) $params = http_build_query($params);
+
+        return $this->_get('report/custom-lineitem/' . $id.'?'.$params);
+    }
 	
 }
