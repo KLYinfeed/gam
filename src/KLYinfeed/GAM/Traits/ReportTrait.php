@@ -42,7 +42,7 @@ trait ReportTrait
 	/**
      * REPORT - CUSTOM LINEITEM REPORT  
     **/
-	public function get_custom-lineitem($params=null)
+	public function get_custom_lineitem($params=null)
     {
         $id = isset($params['id']) ? $params['id'] : null;
 
