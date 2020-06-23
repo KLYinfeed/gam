@@ -38,19 +38,16 @@ trait ReportTrait
 
         return $this->_get('report/lineitem/' . $id.'?'.$params);
     }
-	
+
 	/**
-     * REPORT - CUSTOM LINEITEM REPORT  
+     * REPORT - LINEITEM REPORT  
     **/
 	public function get_custom_lineitem($params=null)
     {
-        $id = isset($params['id']) ? $params['id'] : null;
-		
-        if( $params ) $params = http_build_query($params);
-		
-        return $this->_get('report/custom-lineitem?'.$params);
-		
-		
+        //if( $params ) $params = http_build_query($params);
+
+        return $this->_get('report/custom-lineitem', $params);
     }
+
 	
 }
