@@ -49,5 +49,13 @@ trait ReportTrait
         return $this->_get('report/custom-lineitem', $params);
     }
 
+    /**
+     * REPORT - CHANNEL REPORT  
+    **/
+    public function get_channel_report($params=null)
+    {
+        return $this->_get('report/channel', $params);
+    }
+
 	
 }
