@@ -57,5 +57,21 @@ trait ReportTrait
         return $this->_get('report/channel', $params);
     }
 
+    /**
+     * REPORT - IMPRESSION SITE  
+    **/
+    public function get_imp_site($params=null)
+    {
+        return $this->_get('report/imp-site', $params);
+    }
+
+    /**
+     * REPORT - SAVED QUERY  
+    **/
+    public function get_saved_query($params=null)
+    {
+        return $this->_get('report/saved-query', $params);
+    }
+
 	
 }
