@@ -73,5 +73,22 @@ trait ReportTrait
         return $this->_get('report/saved-query', $params);
     }
 
+    /**
+     * REPORT - BRAND CAMPAIGN
+    **/
+    public function get_brand_campaign($params=null)
+    {
+        return $this->_get('report/adv-campaign', $params);
+    }
+
+    /**
+     * LINE ITEM - FORCAST
+    **/
+    public function get_forcast($params=null)
+    {
+        return $this->_get('forcast', $params);
+    }
+
+
 	
 }
