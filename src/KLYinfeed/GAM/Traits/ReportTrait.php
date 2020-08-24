@@ -49,5 +49,46 @@ trait ReportTrait
         return $this->_get('report/custom-lineitem', $params);
     }
 
+    /**
+     * REPORT - CHANNEL REPORT  
+    **/
+    public function get_channel_report($params=null)
+    {
+        return $this->_get('report/channel', $params);
+    }
+
+    /**
+     * REPORT - IMPRESSION SITE  
+    **/
+    public function get_imp_site($params=null)
+    {
+        return $this->_get('report/imp-site', $params);
+    }
+
+    /**
+     * REPORT - SAVED QUERY  
+    **/
+    public function get_saved_query($params=null)
+    {
+        return $this->_get('report/saved-query', $params);
+    }
+
+    /**
+     * REPORT - BRAND CAMPAIGN
+    **/
+    public function get_brand_campaign($params=null)
+    {
+        return $this->_get('report/adv-campaign', $params);
+    }
+
+    /**
+     * LINE ITEM - FORCAST
+    **/
+    public function get_forecast($params=null)
+    {
+        return $this->_get('forecast', $params);
+    }
+
+
 	
 }
