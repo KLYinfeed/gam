@@ -84,9 +84,9 @@ trait ReportTrait
     /**
      * LINE ITEM - FORCAST
     **/
-    public function get_forcast($params=null)
+    public function get_forecast($params=null)
     {
-        return $this->_get('forcast', $params);
+        return $this->_get('forecast', $params);
     }
 
 
