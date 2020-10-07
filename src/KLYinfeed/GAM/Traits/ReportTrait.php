@@ -56,6 +56,14 @@ trait ReportTrait
     {
         return $this->_get('report/channel', $params);
     }
+	
+    /**
+     * REPORT - CHANNEL REPORT  
+    **/
+    public function get_unstructured_report($params=null)
+    {
+        return $this->_get('report/unstructured', $params);
+    }
 
     /**
      * REPORT - IMPRESSION SITE  
