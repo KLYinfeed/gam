@@ -103,6 +103,5 @@ trait ReportTrait
     public function get_running_campaign($params=null)
     {
         return $this->_get('running-campaign', $params);
-    }
-	
+    }	
 }
