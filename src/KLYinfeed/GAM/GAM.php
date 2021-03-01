@@ -20,7 +20,7 @@ class GAM extends API
      * @param $params Array optional parameters
      * @return callback
      */
-    public function get($action, $callback=null, $params=null)
+    public function get($action, $callback=null, $params=[])
     {
         $this->_callFunc('get_'.$action, $callback, $params);
 
