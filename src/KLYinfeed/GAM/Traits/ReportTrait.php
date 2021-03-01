@@ -58,7 +58,7 @@ trait ReportTrait
     }
 	
     /**
-     * REPORT - UNSTRUCTURED REPORT  
+     * REPORT - CHANNEL REPORT  
     **/
     public function get_unstructured_report($params=null)
     {
@@ -97,14 +97,11 @@ trait ReportTrait
         return $this->_get('forecast', $params);
     }
 	
-	 /**
-     * RUNNING CAMPAIGN
+    /**
+     * RUNNING - CAMPAIGN
     **/
     public function get_running_campaign($params=null)
     {
         return $this->_get('running-campaign', $params);
-    }
-
-
-	
+    }	
 }
