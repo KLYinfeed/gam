@@ -17,7 +17,7 @@ trait InventoryTrait
 
     public function get_segment($params=null)
     {
-        return $this->_get('segment', $params);
+        return $this->_get('segments', $params);
     }
 
     public function post_lineitem($params=null)
