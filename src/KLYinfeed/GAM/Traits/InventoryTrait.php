@@ -29,4 +29,9 @@ trait InventoryTrait
     {
         return $this->_post('preview', $params);
     }
+
+    public function post_action_lineitem($params=null)
+    {
+        return $this->_post('action-lineitem', $params);
+    }
 }
