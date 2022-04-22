@@ -80,6 +80,7 @@ class API extends Model
             $headers = [
                 'headers' => [
                     'Authorization' => "Bearer {$this->accessToken}",
+                    'Accept' => "application/json",
                     'Content-Type' => "application/json",
                 ],
             ];
@@ -120,7 +121,8 @@ class API extends Model
         } 
         catch (BadResponseException $ex) 
         {
-            return $ex->getResponse()->getBody();
+            $response = $ex->getResponse();
+            return $response->getBody()->getContents();
         }
     }
 
