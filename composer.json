@@ -8,7 +8,7 @@
         }
     ],
      "require": {
-        "guzzlehttp/guzzle": "5.4.0"
+        "guzzlehttp/guzzle": "6.3.3"
     },
     "require-dev": {
         "phpunit/phpunit": "4.4.*"
